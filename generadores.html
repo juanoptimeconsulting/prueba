@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GENERADORES</title>
+
+    <!-- Nos va guardando el ultimo estado -->
+
+<script type="text/javascript">
+
+  //YIELD
+  /*function* foo(inicio, fin) {
+  while (inicio < fin) {
+    yield inicio+=3;
+  }
+}
+  for(  let i of foo(0,10)){
+     console.log(i);
+}*/
+//RETORNA LA MISMA SALIDA
+/*function* cuadrados() {
+  let n = 1;
+  while (true) {
+
+    var resultado = n * 2;
+    n++;
+    yield resultado;
+  }
+}
+var guardar = cuadrados();
+console.log(guardar.next().value);
+console.log(guardar.next().value);
+console.log(guardar.next().value);
+console.log(guardar.next().value);*/
+
+//SERIE FIBONACCI
+/*var fibo = {
+*[Symbol.iterator](){
+
+  let resultado = 0, cur = 1
+  for(;;){
+    [resultado, cur] = [cur,resultado + cur]
+    yield cur;
+  }
+}
+}
+for (let n of fibo){
+  if(n > 1000)break
+  console.log(n);
+}*/
+for (i = 0; i < 10; i++) {
+    if (i === 3) { continue; }
+   text += "The number is " + i + "<br>";
+}
+
+
+
+
+
+</script>
+  </head>
+  <body>
+
+  </body>
+</html>

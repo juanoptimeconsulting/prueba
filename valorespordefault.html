@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> VALORES POR DEFAULT EN ARGUMENTOS</title>
+    <script type="text/javascript">
+
+
+//ES5
+  /*  function sa(a,b) {
+    if( b = typeof b !==  'undefined' ? b:1){
+        return a*b;
+    }
+
+    }
+  console.log(sa(3));
+
+
+  //ES6
+  function es(a, b = 1) {
+    return a*b;
+  }
+console.log(es(2));
+
+*/
+//mas de un valor primitivo
+/*
+  function re(a, b=1, c = 2) {
+    return a +b-c;
+
+  }
+console.log(re(2));*/
+
+//CAMBIAMOS TIPOS PRIMITIVOS
+/*
+function cambiarcolor(rojo, azul = 'blue') {
+  var pintura = document.getElementById(rojo);
+  pintura.style.backgroundColor = azul;
+}
+window.onload = function(){
+//  cambiarcolor("id");
+ cambiarcolor("id", 'black');
+}
+
+*/
+
+
+//CAMBIOS POR ARREGLOS
+/*function agre(valor, arreglo =[]) {
+  arreglo.push(valor);
+  return arreglo;
+}
+console.log(agre(1));
+*/
+
+//LLAMADO DE FUNCIONES
+function llamarAlgo(cosa = algo()) {
+  return cosa;
+}
+
+function algo() {
+ return Math.floor(Math.random()*10);//numero random
+}
+console.log(llamarAlgo());
+
+
+
+  </script>
+    <!--<style media="screen">
+      #id{
+        width: 200px;
+        height:  300px;
+     border: 1px solid black;
+        border-top: 100px;
+
+      }
+    </style>-->
+
+
+  </head>
+  <body>
+
+<div id="id"></div>
+
+
+
+  </body>
+</html>
